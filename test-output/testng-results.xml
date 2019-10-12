@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6714" started-at="2019-10-12T08:49:41Z" finished-at="2019-10-12T08:49:47Z">
+  <suite name="Default suite" duration-ms="6927" started-at="2019-10-12T18:30:14Z" finished-at="2019-10-12T18:30:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6714" started-at="2019-10-12T08:49:41Z" finished-at="2019-10-12T08:49:47Z">
+    <test name="Default test" duration-ms="6927" started-at="2019-10-12T18:30:14Z" finished-at="2019-10-12T18:30:21Z">
       <class name="com.selenium.project.com.test.selenium.gmailLogin">
-        <test-method status="PASS" signature="Gmail_Login()[pri:0, instance:com.selenium.project.com.test.selenium.gmailLogin@59f99ea]" name="Gmail_Login" duration-ms="6686" started-at="2019-10-12T08:49:41Z" finished-at="2019-10-12T08:49:47Z">
+        <test-method status="PASS" signature="Gmail_Login()[pri:0, instance:com.selenium.project.com.test.selenium.gmailLogin@59f99ea]" name="Gmail_Login" duration-ms="6892" started-at="2019-10-12T18:30:14Z" finished-at="2019-10-12T18:30:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Gmail_Login -->

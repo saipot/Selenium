@@ -20,7 +20,8 @@ public class gmailLogin {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				
-		driver.getTitle();
+		String Title = driver.getTitle();
+		System.out.println(Title);
 	}
 	
 
