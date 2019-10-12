@@ -80,7 +80,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.0.0-M3</version>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
 					<artifactId>tomcat9-maven-plugin</artifactId>
@@ -107,16 +107,16 @@
 							<configuration>
 								<skip>true</skip>
 							</configuration>
-							</execution>
-							<execution>
+						</execution>
+						<execution>
 							<id>deploy-node-modules-artifact</id>
 							<phase>deploy</phase>
-							
+
 							<goals>
 								<goal>deploy</goal>
 							</goals>
-						
-						<configuration>
+
+							<configuration>
 								<file>${project.file}</file>
 								<groupId>${project.groupId}</groupId>
 								<artifactId>${project.artifactId}</artifactId>
@@ -126,11 +126,23 @@
 								<repositoryId>${targetRepositoryID}</repositoryId>
 								<url>http://localhost:8081/manager/text</url>
 							</configuration>
-		            </execution>
+
+						</execution>
 					</executions>
+
 				</plugin>
 			</plugins>
-			
+
 		</pluginManagement>
 	</build>
+<distributionManagement>
+    <repository>
+        <id>releases</id>
+        <url>http://localhost:8081/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <url>http://localhost:8081/content/repositories/snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
